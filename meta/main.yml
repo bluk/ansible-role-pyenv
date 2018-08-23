@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Bryant Luk
+  role_name: pyenv
+  description: Installs pyenv
+  license: Apache
+  min_ansible_version: 2.6
+  platforms:
+    - name: MacOSX
+      versions:
+        - all
+  galaxy_tags:
+    - pyenv
+    - python
+    - virtualenv
+    - development
+    - system
+    - packaging
+dependencies: []

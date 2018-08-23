@@ -1,0 +1,12 @@
+---
+# tasks file for ansible-role-pyenv
+- name: Install pyenv
+  git:
+    repo: "{{ pyenv_git_url }}"
+    dest: "{{ pyenv_install_path }}"
+    update: "{{ pyenv_git_update }}"
+- name: Install pyenv-virtualenv plugin
+  git:
+    repo: "{{ pyenv_virtualenv_git_url }}"
+    dest: "{{ pyenv_install_path}}/plugins/pyenv-virtualenv"
+    update: "{{ pyenv_virtualenv_git_update }}"
